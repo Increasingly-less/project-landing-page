@@ -1,0 +1,127 @@
+
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    display: flex;
+    justify-content: stretch;
+    flex-direction: column;
+}
+
+header {
+    background-color: #00003c;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+.logo {
+font-size: 30px;
+font-weight: 900;
+padding: 20px;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#awesome {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #00003c;
+}
+
+#awesome .leftside {
+    flex: 1;
+}
+
+#awesome .rightside img {
+    width: 200px;
+    height: 200px;
+}
+
+#random {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.random-title {
+    font-weight: 900;
+
+}
+
+.image-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-blocks .ib1,
+.image-blocks .ib2,
+.image-blocks .ib3,
+.image-blocks .ib4 {
+    flex: 1;
+    min-width: 100px; /* Adjust as needed */
+    text-align: center;
+}
+
+.image-blocks img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #00003c;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 45px;
+}
+
+#quote {
+    background-color: lightgray;
+    color: black;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 20px;  
+    padding-bottom: 20px;
+}
+
+.quote {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    font-size: large;
+}
+
+.author {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    text-align: right;
+    font-size: medium;
+    margin-top: 10px; 
+    display: flex;
+    justify-content: flex-end;
+}
