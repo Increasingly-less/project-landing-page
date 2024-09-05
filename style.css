@@ -1,8 +1,8 @@
 
 
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
 }
 
 header {
@@ -10,10 +10,10 @@ header {
     color: white;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 45px;
     margin: 0;
     padding: 0;
-    gap: 30px;
 }
 
 .logo {
@@ -25,23 +25,17 @@ padding: 20px;
 ul {
     display: flex;
     margin: 0;
-    padding: 0;
+    padding-right: 20px;
     gap: 30px;
+    
 }
 
 li {
     list-style: none;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
 #awesome {
-    display: flex; 
+    display: flex;
     justify-content: space-between; 
     align-items: center; 
     padding: 20px;
@@ -52,17 +46,35 @@ section {
 
 #awesome .leftside {
     align-items: left;
+    text-align: justify;
+}
+
+#awesome h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+#awesome p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 0;
 }
 
 #awesome .rightside {
-    align-items: right;
+    min-width: 200px;
+
 }
 
 #awesome .rightside img {
-    max-width: 100%; 
+    max-width: 300px;
+    width: 100%;
     height: auto;
-    width: 200px; 
-    height: 200px; 
+    
 }
 
 #random {
@@ -73,12 +85,18 @@ section {
 
 .random-title {
     font-weight: 900;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 30px;
 
 }
 
 .image-blocks {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    padding-right: 20px;
     gap: 20px;
 }
 
@@ -87,12 +105,12 @@ section {
 .image-blocks .ib3,
 .image-blocks .ib4 {
     flex: 1;
-    min-width: 100px; /* Adjust as needed */
+    min-width: 100px; 
     text-align: center;
 }
 
 .image-blocks img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     margin-bottom: 10px;
 }
@@ -100,8 +118,8 @@ section {
 #quote {
     background-color: lightgray;
     color: black;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-top: 5px;  
     padding-bottom: 5px;
 }
@@ -114,7 +132,7 @@ section {
 
 .author {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 500;
+    font-weight: 900;
     text-align: right;
     font-size: medium;
     margin-top: 10px; 
@@ -124,8 +142,10 @@ section {
 
 #marketing-section {
     background-color: white;
-    padding: 40px 0;
+    padding: 30px 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .marketing-bar {
@@ -133,8 +153,10 @@ section {
     background-color: rgb(3, 160, 222);
     color: white;
     padding: 10px;
-    border-radius: 25px;
+    border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px;
 }
 
 .marketing-container {
@@ -174,7 +196,7 @@ section {
 
 footer {
     background-color: #00003c;
-    color: gray;
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
