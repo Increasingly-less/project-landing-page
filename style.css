@@ -3,9 +3,6 @@
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: small;
-    display: flex;
-    justify-content: stretch;
-    flex-direction: column;
 }
 
 header {
@@ -44,19 +41,28 @@ section {
 }
 
 #awesome {
-    display: flex;
-    justify-content: space-between;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
     padding: 20px;
     background-color: #00003c;
+    color: white;
+    gap: 20px;
 }
 
 #awesome .leftside {
-    flex: 1;
+    align-items: left;
+}
+
+#awesome .rightside {
+    align-items: right;
 }
 
 #awesome .rightside img {
-    width: 200px;
-    height: 200px;
+    max-width: 100%; 
+    height: auto;
+    width: 200px; 
+    height: 200px; 
 }
 
 #random {
@@ -91,23 +97,13 @@ section {
     margin-bottom: 10px;
 }
 
-footer {
-    background-color: #00003c;
-    color: gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 45px;
-}
-
 #quote {
     background-color: lightgray;
     color: black;
     padding-left: 250px;
     padding-right: 250px;
-    padding-top: 20px;  
-    padding-bottom: 20px;
+    padding-top: 5px;  
+    padding-bottom: 5px;
 }
 
 .quote {
@@ -124,4 +120,64 @@ footer {
     margin-top: 10px; 
     display: flex;
     justify-content: flex-end;
+}
+
+#marketing-section {
+    background-color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.marketing-bar {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(3, 160, 222);
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.marketing-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marketing-button button {
+    background-color: rgb(0, 66, 90);
+    color: white;
+    padding: 10px 20px;
+    border: 5px;
+    border-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.marketing-button button:hover {
+    background-color: rgb(159, 194, 229);
+    color: black;
+}
+
+.marketing-bar-text-1 {
+    font-weight: 900;
+    font-size: large;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.marketing-bar-text-2 {
+    margin:0;
+    padding: 0;
+}
+
+footer {
+    background-color: #00003c;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 45px;
 }
