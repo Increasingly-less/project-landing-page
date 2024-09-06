@@ -5,6 +5,11 @@ body {
     font-size: 12px;
 }
 
+* {
+    margin: 0;
+    padding:0;
+}
+
 header {
     background-color: #00003c;
     color: white;
